@@ -1,0 +1,30 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "tracebase_sample_list"
+version = "0.0.1"
+authors = [
+  { name="Lance Parsons", email="lparsons@princeton.edu" },
+]
+description = "Extract a list of sample names from a directory of AccuCor or Isocor files"
+readme = "README.md"
+requires-python = ">=3.7"
+license = {"text" = "MIT"}
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+    "pandas>=1.5",
+    "openpyxl"
+]
+
+[project.scripts]
+tracebase-sample-list = "tracebase_sample_list.tracebase_sample_list:main"
+
+# [project.urls]
+# "Homepage" = "https://github.com/pypa/sampleproject"
+# "Bug Tracker" = "https://github.com/pypa/sampleproject/issues"

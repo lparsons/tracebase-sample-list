@@ -1,0 +1,13 @@
+---
+name: tracebase-sample-list
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python
+  - pip
+  - mypy
+  - black
+  - pylint
+  - flake8
+  - isort
